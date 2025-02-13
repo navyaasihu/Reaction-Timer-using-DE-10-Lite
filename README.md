@@ -19,9 +19,6 @@ The LED controller drives a 10-LED array on the board, offering a visual indicat
 High Score Register:
 This module stores and continuously updates the best (lowest) reaction time achieved, providing a performance benchmark for the user.
 
-Finite State Machine (FSM):
-An FSM manages the system states: starting in the IDLE state, transitioning to the DELAY state when the user presses KEY0, moving to the TIMING state when the delay expires, and finally entering the STOPPED state when the user presses KEY0 again. The FSM ensures smooth state transitions and coordinated operation of all modules.
-
 Seven-Segment Display (SSD) Controller:
 The SSD controller converts the binary reaction time into BCD format and drives the on-board HEX displays (HEX0, HEX1, HEX2). This conversion allows the reaction time to be displayed in a human-readable numerical format.
 
